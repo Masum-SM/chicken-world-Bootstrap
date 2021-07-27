@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  border-bottom: 4px solid orange !important;
+}
+.logo {
+  background-color: orange;
+  padding: 5px;
+  border-radius: 50%;
+}
+.navbar .navbar-toggler {
+  background-color: orange;
+  color: white;
+}
+
+.nav-item {
+  background-color: orange;
+  margin-right: 5px;
+}
+.contianer button {
+  color: orange !important;
+}
+form {
+  background-color: b;
+  border: orange 2px solid;
+  border-radius: 25px;
+  height: 30px;
+}
+form input {
+  border: none !important;
+
+  border-bottom-left-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+}
+
+.search-icon {
+  color: white;
+  background-color: orange;
+  margin-left: 0;
+  padding: 0 10px;
+  border-bottom-right-radius: 25px !important;
+  border-top-right-radius: 25px !important;
+}
+
+/* --------------------------------------side-bar -------------------------------*/
+.side-bar {
+  color: black;
+}
+
+/*---------------------------------- carousel-------------------------- */
+
+.Kadaknath img {
+  width: 84% !important;
+}
+
+/* -----------------------------catagories------------------------------------- */
+#catagories img {
+  width: 100px;
+  height: 100px;
+}
+
+/* ----------------------------------Items ---------------------------------*/
+.Items img {
+  width: 100%;
+  height: 300px;
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrap practice</title>
+
+    <!----------------------------- boostrap stylesheet--------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!----------------------------- custom stylesheet--------------------------- 
+    -->
+    <link rel="stylesheet" href="css/style.css">
+
+   
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <span class="logo">L</span>
+                    <span class="logo">O</span>
+                    <span class="logo">G</span>
+                    <span class="logo">O</span>
+                </a>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex ms-auto me-2 bg-dark">
+                        <input class="form-control me-2 search-bar bg-dark" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <span class="search-icon d-flex align-items-center justify-contenet-center"><i
+                                class="fas fa-search"></i></span>
+                    </form>
+                    <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+                        <li class="nav-item badge ">
+                            <a class="nav-link active" aria-current="page" href="#catagories">Card</a>
+                        </li>
+                        <li class="nav-item badge ">
+                            <a class="nav-link active" aria-current="page" href="#deshi-chicken">Deshi</a>
+                        </li>
+                        <li class="nav-item badge ">
+                            <a class="nav-link active" aria-current="page" href="#broiler">Broiler</a>
+                        </li>
+                        <li class="nav-item badge ">
+                            <a class="nav-link active" aria-current="page" href="#kadarnath">Kadarnath</a>
+                        </li>
+
+                        <!-- <li class="nav-item badge ">
+                            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-user-edit"></i></a>
+                        </li> -->
+
+                        <li class="nav-item  badge">
+                            
+                            <a class=" nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"aria-controls="offcanvasRight">
+                                <i class="fas fa-user-edit"></i>
+                            </a>
+                                  
+                                
+                                  
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                                    <div class="offcanvas-header side-bar">
+                                      <h5 id="offcanvasRightLabel">Profile</h5>
+                                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+
+                                 
+
+                                    <div class="offcanvas-body side-bar">
+                                        <div class="">
+                                            <div class="list-group fs-5">
+                                            
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-check"></i>  &nbsp;<span>My Account</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-bell"></i>  &nbsp;<span>Notification</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-cart-plus"></i>  &nbsp;<span>Card</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-comment-dots"></i>  &nbsp;<span>Message</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-heart"></i>  &nbsp;<span>Favourite</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-gift"></i>  &nbsp;<span>Gift Card</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-plus"></i>  &nbsp;<span>Create Account</span></a>
+                                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-sign-out-alt"></i>  &nbsp;<span>Sign out</span></a>
+                                                
+                                              </div>
+                                           
+
+                                            <!-- <ul class="list-group list-group-flush">
+
+                                                <li class="list-group-item">
+                                                 
+                                                    <a href=""><i class="fas fa-user-check"></i>  &nbsp;<span>My Account</span></a>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-check"></i>  &nbsp;<span>My Account</span></a>
+                                                 
+                                                
+                                                </li>
+                                            
+                                            </ul> 
+                                             -->
+                                        </div>
+
+                              
+
+                                    </div>
+
+                            </div>
+
+
+                            
+                        </li>
+
+
+
+
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <section class="container p-5 ms-auto border border-warning border-3 slider-section mt-5 ">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                  <div class="carousel-item active pb-2">
+                      <div class="row d-flex align-items-center">
+                          <div class="col-12 col-lg-7">
+                              <h1>Welcome to Chicekn world,Healthy Food Healthy Life.</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error soluta possimus provident ipsum. Exercitationem?</p>
+                              <button class="btn btn-warning">Order Now</button>
+
+                          </div>
+                          <div class="col-12 col-lg-5">
+                            <img src="photos/caro-pic/deshi-chicken.png" class="d-block w-100" alt="...">
+
+                          </div>
+                      </div>
+                   
+                  </div>
+                  <div class="carousel-item pb-5 ">
+                      <div class="row d-flex align-items-center">
+                          <div class="col-12 col-lg-7">
+                              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error soluta possimus provident ipsum. Exercitationem?</p>
+                              <button class="btn btn-warning">Order Now</button>
+
+                          </div>
+                          <div class="col-12 col-lg-5">
+                            <img src="photos/caro-pic/broiboyler-1.png" class="d-block w-100" alt="...">
+
+                          </div>
+                      </div>
+                   
+                  </div>
+                  <div class="carousel-item pb-0">
+                      <div class="row d-flex align-items-center">
+                          <div class="col-12 col-lg-7">
+                              <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et error soluta possimus provident ipsum. Exercitationem?</p>
+                              <button class="btn btn-warning">Order Now</button>
+
+                          </div>
+                          <div class="col-12 col-lg-5 Kadaknath">
+                            <img src="photos/caro-pic/Kadaknath-Chicken-1.png" class="d-block w-100" alt="...">
+
+                          </div>
+                      </div>
+                   
+                  </div>
+
+        
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+        </section>
+
+        
+ 
+
+
+
+    </header>
+
+    <main>
+        <!-- ------------------------------------catagories section -------------------------------------->
+        <section id="catagories" class="container my-5 ">
+            <div class="row g-2">
+                <div class="col-12 col-md-6 col-lg-4 bg-warning ">
+                  <div class="p-3 border d-flex align-items-center justify-contenet-center bg-danger border-3 rounded-3">
+                      <h1 class="text-light fw-bold">Deshi Chicken</h1>
+                      <img src="photos/caro-pic/deshi-chicken.png"  alt="">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 bg-warning ">
+                  <div class="p-3 border d-flex align-items-center justify-contenet-center bg-success border-3 rounded-3">
+                      <h1 class="text-light fw-bold">Boyler Chicken</h1>
+                      <img src="photos/caro-pic/broiboyler-1.png" alt="">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6  col-lg-4 bg-warning">
+                  <div class="p-3 border d-flex align-items-center justify-contenet-center bg-info border-3 rounded-3">
+                      <h1 class="text-light fw-bold">Kadaknath Chicken</h1>
+                      <img src="photos/caro-pic/Kadaknath-Chicken-1.png" alt="">
+                  </div>
+                </div>
+     
+          
+            </div>
+        
+        
+        </section>
+    
+ 
+    <!-- ------------------------------------Deshi chicken Item section -------------------------------------->
+
+        <section id="deshi-chicken" class="container Items">
+            <h1 class="mb-3 fw-bolder text-reset">Deshi Chicken</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                      <div class="item-img mx-auto">
+                        <img src="photos/desi-rec/Oven_Fried_Chicken_Wings.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                      <h3 class="card-title text-warning fw-bolder">Fried Chicken Wings</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="text-danger fw-bolder">$120 (only)</h4>
+                    </div>
+                    <div class="button d-grid gap-2">
+                        <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                            Cart</a>
+                          <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                            Favorite</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+            
+                    <div class="item-img mx-auto">
+                        <img src="photos/desi-rec/spice-mantra-chicken.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    
+                           <div class="card-body">
+                      <h3 class="card-title text-warning fw-bolder">Spice Mantra Chicken</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="text-danger fw-bolder">$130 (only)</h4>
+                    </div>
+                    <div class="button d-grid gap-2">
+                        <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                            Cart</a>
+                          <a href="#" class="btn hat-btn btn-warning text-light fw-bold " type="button"><i class="fas fa-heart"></i> Add To My
+                            Favorite</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                    <div class="item-img mx-auto">
+                        <img src="photos/desi-rec/Salad-Chicken-Caesar.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h3 class="card-title text-warning fw-bolder">Salad Chicken Caesar</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 class="text-danger fw-bolder">$100 (only)</h4>
+                      </div>
+                      <div class="button d-grid gap-2">
+                          <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                              Cart</a>
+                            <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                              Favorite</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    <!-- -----------------------------------Boiler chicken Item section -------------------------------------->
+
+    <section id="broiler" class="container mt-5 Items ">
+        <h1 class="mb-3 fw-bolder text-reset">broiler Chicken</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                  <div class="item-img mx-auto">
+                    <img src="photos/boylar-rec/Lemon_Roasted_Chicken.png" class="card-img-top" alt="...">
+                </div>
+               
+                <div class="card-body">
+                  <h3 class="card-title text-warning fw-bolder">Lemon Roasted Chicken</h3>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="text-danger fw-bolder">$90 (only)</h4>
+                </div>
+                <div class="button d-grid gap-2">
+                    <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                        Cart</a>
+                      <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                        Favorite</a>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+        
+                <div class="item-img mx-auto">
+                    <img src="photos/boylar-rec/North_Alabama_Barbecue_Chicken.png" class="card-img-top" alt="...">
+                </div>
+               
+                
+                       <div class="card-body">
+                  <h3 class="card-title text-warning fw-bolder">Alabama Barbecue Chicken</h3>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <h4 class="text-danger fw-bolder">$160 (only)</h4>
+                </div>
+                <div class="button d-grid gap-2">
+                    <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                        Cart</a>
+                      <a href="#" class="btn hat-btn btn-warning text-light fw-bold " type="button"><i class="fas fa-heart"></i> Add To My
+                        Favorite</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                <div class="item-img mx-auto">
+                    <img src="photos/boylar-rec/spicy-chicken.png" class="card-img-top" alt="...">
+                </div>
+               
+                <div class="card-body">
+                    <h3 class="card-title text-warning fw-bolder">Spicy Chicken</h3>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h4 class="text-danger fw-bolder">$120 (only)</h4>
+                  </div>
+                  <div class="button d-grid gap-2">
+                      <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                          Cart</a>
+                        <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                          Favorite</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+        <!-- -----------------------------------Kadarnath chicken Item section -------------------------------------->
+
+        <section id="kadarnath" class="container mt-5 Items">
+            <h1 class="mb-3 fw-bolder text-reset">Kadarnath Chicken</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                      <div class="item-img mx-auto">
+                        <img src="photos/kadar-rec/chicken-wings.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                      <h3 class="card-title text-warning fw-bolder">Chicken Wings</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="text-danger fw-bolder">$330 (only)</h4>
+                    </div>
+                    <div class="button d-grid gap-2">
+                        <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                            Cart</a>
+                          <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                            Favorite</a>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+            
+                    <div class="item-img mx-auto">
+                        <img src="photos/kadar-rec/stir-fry.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    
+                           <div class="card-body">
+                      <h3 class="card-title text-warning fw-bolder">Stir Fry</h3>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <h4 class="text-danger fw-bolder">$480 (only)</h4>
+                    </div>
+                    <div class="button d-grid gap-2">
+                        <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                            Cart</a>
+                          <a href="#" class="btn hat-btn btn-warning text-light fw-bold " type="button"><i class="fas fa-heart"></i> Add To My
+                            Favorite</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card h-100 shadow p-3 mb-5 bg-body rounded border-0">
+                    <div class="item-img mx-auto">
+                        <img src="photos/kadar-rec/tandoori-chicken-kebab.png" class="card-img-top" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h3 class="card-title text-warning fw-bolder">Tandoori Chicken Kebab</h3>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h4 class="text-danger fw-bolder">$350 (only)</h4>
+                      </div>
+                      <div class="button d-grid gap-2">
+                          <a href="#" class="btn btn-warning hat-btn text-light fw-bold" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                              Cart</a>
+                            <a href="#" class="btn hat-btn btn-warning text-light fw-bold" type="button"><i class="fas fa-heart"></i> Add To My
+                              Favorite</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+
+     <!-- ------------------------------------Information section -------------------------------------->      
+        <section class="mb-5">
+            <div class="container mt-5 border border-3 border-warning p-5">
+                <div class="row ">
+                    <div class="bg about-font col-12 col-lg-6  p-4 bg-secondary mb-2">
+                        <h1 class="tittle"> <span style="color: red;">Contact</span> Information</h1><br>
+                        <h3>Address</h3><br>
+                        <p class="con-clr">House: #3563, Road:RND, anevue:#957, Thana: Lalbug, Dhaka, Bangladesh</p><br>
+                        <h4>Phone</h4><br>
+                        <p class="con-clr">+088 90047378483</p>
+                        <p class="con-clr">+088 86539275347</p><br>
+                        <h4>Email</h4><br>
+                        <p class="con-clr">info.test@gmail.com</p>
+                        <p class="con-clr">honeuniw.xy@gmail.com</p>
+        
+                      </div>
+        
+                    <div class="col-12 col-lg-6 border  border-3 p-4 mb-2">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=https://goo.gl/maps/EG2pqxNQpsDq8rvM8&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <!----------------------------- fontawsome script--------------------------- -->
+    <script src="https://kit.fontawesome.com/22df1ea560.js" crossorigin="anonymous"></script>
+    <!----------------------------- java script--------------------------- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
